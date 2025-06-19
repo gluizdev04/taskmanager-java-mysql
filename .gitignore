@@ -1,0 +1,48 @@
+# Bytecode compilado
+*.class
+
+# Logs
+*.log
+
+# Pacotes
+*.jar
+*.war
+*.ear
+
+# Diretórios do build
+/target/
+/out/
+/build/
+
+# IntelliJ
+/.idea/
+/*.iml
+/*.iws
+/*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+/.factorypath
+
+# VS Code
+.vscode/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Configs sensíveis (não sobe senha)
+/application.properties
+/config.properties
+
+# Maven Wrapper (se usar Maven)
+/.mvn/wrapper/maven-wrapper.jar
