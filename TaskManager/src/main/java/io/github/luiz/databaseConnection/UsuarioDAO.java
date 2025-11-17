@@ -9,7 +9,6 @@ public class UsuarioDAO {
         String sql = "INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)";
 
         try (Connection conn = DatabaseConenction.getConnection();
-             // Aqui dizemos que queremos retornar as chaves geradas (o ID)
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 
             stmt.setString(1, usuario.getNome());
@@ -17,11 +16,10 @@ public class UsuarioDAO {
             stmt.setString(3, usuario.getSenha());
             stmt.executeUpdate();
 
-            // Pega o ID gerado automaticamente pelo banco
             ResultSet rs = stmt.getGeneratedKeys();
             if (rs.next()) {
-                int idGerado = rs.getInt(1);         // Primeiro campo da resposta é o ID
-                usuario.setId(idGerado);             // Atualiza o objeto Usuario com o ID correto
+                int idGerado = rs.getInt(1);        
+                usuario.setId(idGerado);             
             }
 
             System.out.println("Usuário cadastrado com sucesso!");
