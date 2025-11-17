@@ -4,15 +4,10 @@ Aplicação Java de gerenciamento de tarefas com conexão direta ao banco de dad
 
 ### Funcionalidades
 Login e cadastro de usuário.
-
 Cadastro de novas tarefas.
-
 Listagem de todas as tarefas.
-
 Edição de tarefas existentes.
-
 Exclusão de tarefas.
-
 Marcar tarefas como "Concluídas" ou "Pendentes".
 
 
