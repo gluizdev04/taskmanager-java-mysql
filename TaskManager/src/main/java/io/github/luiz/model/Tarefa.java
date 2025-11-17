@@ -9,7 +9,6 @@ public class Tarefa {
     private boolean concluida;
     private int usuarioId;
 
-    // Construtor
     public Tarefa(String titulo, String descricao, int usuarioId) {
         this.titulo = titulo;
         this.descricao = descricao;
@@ -23,10 +22,8 @@ public class Tarefa {
         this.concluida = concluida;
         this.usuarioId = usuarioId;
     }
+    
 
-
-
-    // Getters
     public int getId() {
         return id;
     }
@@ -43,7 +40,7 @@ public class Tarefa {
         return usuarioId;
     }
 
-    // Setters
+    
     public void setId(int id) {
         this.id = id;
     }
