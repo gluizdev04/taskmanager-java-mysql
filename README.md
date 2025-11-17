@@ -2,6 +2,8 @@
 
 Aplicação Java de gerenciamento de tarefas com conexão direta ao banco de dados MySQL via JDBC. Projeto de console focado no aprendizado e prática de JDBC, POO e integração com banco de dados relacional.
 
+
+
 ### Funcionalidades
 Login e cadastro de usuário.
 
